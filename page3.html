@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f6f6;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 80px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo{
+    	    display:flex;
+    	    align-items:center;
+    	    gap:10px;
+            font-size:24px;
+    	    font-weight:bold;
+	}
+
+	.logo img{
+    	   width:50px;
+    	   height:50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 25px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .trial-btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* TABLE SECTION */
+
+        .table-section {
+            padding:60px 80px 20px 80px;
+        }
+
+        .table-section h1 {
+            margin-bottom: 30px;
+        }
+
+        /* TABLE WRAPPER FOR MOBILE SCROLL */
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            min-width: 500px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        /* BUTTON AREA */
+
+        .button-area {
+            text-align: center;
+            padding:10px 60px 40px 60px;
+        }
+
+        .button-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #0000FF;
+        }
+
+        .big-btn {
+            padding: 10px 60px;
+            font-size: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* REVIEWS */
+
+        .review-section {
+            padding:10px 80px;
+        }
+
+        .review-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* REVIEW HEADER */
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .review-header img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .review-name {
+            font-weight: bold;
+        }
+	
+	.steps {
+	    font-weight: bold;
+	    color: #4B0082;
+	    line-height: 2;
+
+        /* FOOTER */
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+
+        @media (max-width:900px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .table-section {
+                padding: 40px 20px;
+            }
+
+            .review-section {
+                padding: 40px 20px;
+            }
+
+            .button-area {
+                padding: 40px 20px;
+            }
+
+            .footer {
+                padding: 30px 20px;
+            }
+
+        }
+
+        /* SMALL PHONE */
+
+        @media (max-width:500px) {
+
+            .big-btn {
+                width: 90%;
+                font-size: 18px;
+                padding: 18px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+	    <img src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
+	    <span>RioGrabs</span>
+	</div>
+
+        <div class="nav-links">
+            <a href="#">Features</a>
+            <a href="#">Tools</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="contact-btn">Contact</button>
+            <button class="trial-btn">Free Trail</button>
+        </div>
+
+    </div>
+
+
+    <!-- TABLE -->
+
+    <div class="table-section">
+
+        <h1>Feature Comparison</h1>
+
+        <div class="table-container">
+
+            <table>
+
+                <tr>
+                    <th>Feature</th>
+                    <th>Meta verified</th>
+                    <th>With Verified Badge by GioGrabs</th>
+                </tr>
+
+                <tr>
+                    <td>Cost</td>
+                    <td>$14.99 per month</td>
+                    <td>Free of cost</td>
+                </tr>
+
+                <tr>
+                    <td>Eligibility</td>
+                    <td>ID verification required</td>
+                    <td>ID verification required</td>
+                </tr>
+
+                <tr>
+                    <td>Primary Purpose</td>
+                    <td>Make your account more visible</td>
+                    <td>Make your account more visible</td>
+                </tr>
+
+                <tr>
+                    <td>Key Benefit</td>
+                    <td>Priority support, Higher credibility</td>
+                    <td>Priority support, Higher credibility</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- BUTTON SECTION -->
+
+    <div class="button-area">
+
+        <p class="button-text">
+            Click the butten to Claim now....✨✨</p>
+	    <p><span class="steps">1. Login to Your account<br>
+	    2. Click on 'Claim Now'</span>
+        </p>
+
+        <button class="big-btn" onclick="nextPage()">Claim</button>
+
+    </div>
+
+
+    <!-- REVIEWS -->
+
+    <div class="review-section">
+
+        <h2 class="review-title">What Our Customers Say</h2>
+
+        <div class="reviews">
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+                    <div class="review-name">Charlotte L.</div>
+                </div>
+
+                <p>★★★★★</p>
+                <p>Thank GioGrabs its really amazing.i saved lots of money.</p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+                    <div class="review-name">Jaison Jhon</div>
+                </div>
+
+                <p>★★★★★</p>
+                <p>Great platform its really worked. Thank you GioGrabs really thank you.</p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg">
+                    <div class="review-name">Ram M.</div>
+                </div>
+
+                <p>★★★★★</p>
+                <p>Its worked thanks.</p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg">
+                    <div class="review-name">Melin Lavis.</div>
+                </div>
+
+                <p>★★★★☆</p>
+                <p>Very helpful service and its really worked but no option with other social medias.</p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg">
+                    <div class="review-name">Antra G.</div>
+                </div>
+
+                <p>★★★★★</p>
+                <p>Great and saved money. GioGrabs really surprised me thanks.</p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-header">
+                    <img src="https://randomuser.me/api/portraits/men/52.jpg">
+                    <div class="review-name">Debayan Vanderburg.</div>
+                </div>
+
+                <p>★★★★☆</p>
+                <p>Good experience overall and easy to use. It gives free badge but sometimes meta recogonize and remove it, again we need to apply here.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <p>© 2026 GeoGrabs | Built For New Wishes</p>
+    </div>
+
+
+    <script>
+
+        function nextPage() {
+            window.location.href = "page4.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

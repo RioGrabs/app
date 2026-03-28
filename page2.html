@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6fb;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 80px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo{
+    	    display:flex;
+    	    align-items:center;
+    	    gap:10px;
+            font-size:24px;
+    	    font-weight:bold;
+	}
+
+	.logo img{
+    	   width:50px;
+    	   height:50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 25px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .trial-btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* HEADER */
+
+        .header {
+            text-align: center;
+            padding: 60px 20px 5px 10px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        /* BUTTON SECTION */
+
+        .button-section {
+            text-align: center;
+            padding:15px 40px;
+        }
+
+        .button-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .big-button {
+            padding: 20px 60px;
+            font-size: 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .big-button:hover {
+            background: #45a049;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 80px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 240px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 80px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width:900px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .cards {
+                padding: 30px 20px;
+            }
+
+            .card {
+                width: 45%;
+            }
+
+            .footer {
+                padding: 40px 20px;
+            }
+        }
+
+        /* SMALL PHONES */
+
+        @media (max-width:500px) {
+
+            .card {
+                width: 100%;
+            }
+
+            .big-button {
+                width: 90%;
+                font-size: 18px;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+	    <img src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
+	    <span>RioGrabs</span>
+	</div>
+
+
+        <div class="nav-links">
+            <a href="#">Leatures</a>
+            <a href="#">Tools</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="contact-btn">Contact</button>
+            <button class="trial-btn">Free Trial</button>
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>Why Meta Verification Badge?</h1>
+
+        <p>
+            why do you need meta badge? What is the use of ths badge.
+	    This verification gives you lots of features.
+        </p>
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <div class="button-section">
+
+        <p class="button-description">
+            Click here and continue to claim your badge.
+        </p>
+
+        <button class="big-button" onclick="nextPage()">Continue</button>
+
+    </div>
+
+
+    <!-- CARDS -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Verified Blue Badge ✔️</h3>
+            <p>Your profile receives a blue verification badge next to your username. This badge shows that Meta has confirmed your identity using a government ID. It helps people know that your account is authentic and not fake, which is especially important for public figures, creators, and businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Stronger Account Protection 🔒</h3>
+            <p>Meta Verified provides additional security features to protect your account. This includes protection against impersonation (fake accounts pretending to be you) and stronger monitoring by Meta. These measures reduce the risk of hacking or misuse of your identity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Direct Customer Support 💬</h3>
+            <p>Verified users get access to priority customer support. If you face problems like account recovery issues, login problems, or impersonation, you can contact Meta support more easily and receive faster assistance compared to normal users.</p>
+        </div>
+
+        <div class="card">
+            <h3>Improved Visibility and Reach 📈</h3>
+            <p>Accounts with the Meta verification badge may receive better visibility on the platform. This means your profile, posts, and comments may appear more prominently in search results, recommendations, or comment sections, helping you gain more audience and engagement.</p>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <p>© 2026 RioGrabs | Build For New Wishes</p>
+    </div>
+
+
+    <script>
+
+        function nextPage() {
+            window.location.href = "page3.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
