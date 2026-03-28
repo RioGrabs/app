@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RioGrabs</title>
-
+    <title>Comparison</title>
     <style>
         body {
             margin: 0;
@@ -14,7 +12,6 @@
         }
 
         /* NAVBAR */
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -24,17 +21,17 @@
             border-bottom: 1px solid #ddd;
         }
 
-        .logo{
-    	    display:flex;
-    	    align-items:center;
-    	    gap:10px;
-            font-size:24px;
-    	    font-weight:bold;
-	}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-	.logo img{
-    	   width:50px;
-    	   height:50px;
+        .logo img {
+            width: 50px;
+            height: 50px;
         }
 
         .nav-links {
@@ -70,9 +67,8 @@
         }
 
         /* TABLE SECTION */
-
         .table-section {
-            padding:60px 80px 20px 80px;
+            padding: 60px 80px 20px 80px;
         }
 
         .table-section h1 {
@@ -80,7 +76,6 @@
         }
 
         /* TABLE WRAPPER FOR MOBILE SCROLL */
-
         .table-container {
             overflow-x: auto;
         }
@@ -92,8 +87,7 @@
             min-width: 500px;
         }
 
-        th,
-        td {
+        th, td {
             border: 1px solid #ddd;
             padding: 15px;
             text-align: left;
@@ -104,10 +98,9 @@
         }
 
         /* BUTTON AREA */
-
         .button-area {
             text-align: center;
-            padding:10px 60px 40px 60px;
+            padding: 10px 60px 40px 60px;
         }
 
         .button-text {
@@ -127,9 +120,8 @@
         }
 
         /* REVIEWS */
-
         .review-section {
-            padding:10px 80px;
+            padding: 10px 80px;
         }
 
         .review-title {
@@ -152,7 +144,6 @@
         }
 
         /* REVIEW HEADER */
-
         .review-header {
             display: flex;
             align-items: center;
@@ -169,14 +160,14 @@
         .review-name {
             font-weight: bold;
         }
-	
-	.steps {
-	    font-weight: bold;
-	    color: #4B0082;
-	    line-height: 2;
+
+        .steps {
+            font-weight: bold;
+            color: #4B0082;
+            line-height: 2;
+        }
 
         /* FOOTER */
-
         .footer {
             background: #1a1a1a;
             color: white;
@@ -186,62 +177,101 @@
         }
 
         /* ---------------- MOBILE ---------------- */
-
         @media (max-width:900px) {
-
             .navbar {
                 flex-direction: column;
+                align-items: center;
                 gap: 15px;
                 padding: 20px;
             }
+	    
+       	    .logo {
+		justify-content: center;
+	    }
 
             .nav-links {
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
             }
 
-            .table-section {
-                padding: 40px 20px;
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
             }
 
-            .review-section {
-                padding: 40px 20px;
+            .table-section, .button-area, .review-section {
+                padding: 20px 15px;
             }
 
-            .button-area {
-                padding: 40px 20px;
+            .table-container {
+                overflow-x: auto;
+            }
+
+            table th, table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .big-btn {
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 0;
+            }
+
+            .button-text, .steps {
+                font-size: 16px;
+            }
+
+            .reviews {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .review-title {
+                font-size: 24px;
             }
 
             .footer {
-                padding: 30px 20px;
+                padding: 20px 15px;
+                font-size: 14px;
             }
-
         }
 
-        /* SMALL PHONE */
-
+        /* SMALL PHONE PATCH */
         @media (max-width:500px) {
-
             .big-btn {
-                width: 90%;
-                font-size: 18px;
-                padding: 18px;
+                font-size: 15px;
+                padding: 10px 0;
             }
 
+            .table-section h1 {
+                font-size: 20px;
+            }
+
+            .review-title {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+            }
         }
+
     </style>
 </head>
-
 <body>
 
     <!-- NAVBAR -->
-
     <div class="navbar">
-
         <div class="logo">
-	    <img src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
-	    <span>RioGrabs</span>
-	</div>
+            <img src="https://i.ibb.co/1YnyY5kj/Whats-App-Image-2026-03-28-at-12-54-56-AM-removebg-preview.png" alt="Logo">
+            <span>RioGrabs</span>
+        </div>
 
         <div class="nav-links">
             <a href="#">Features</a>
@@ -254,177 +284,118 @@
             <button class="contact-btn">Contact</button>
             <button class="trial-btn">Free Trail</button>
         </div>
-
     </div>
 
-
     <!-- TABLE -->
-
     <div class="table-section">
-
         <h1>Feature Comparison</h1>
-
         <div class="table-container">
-
             <table>
-
                 <tr>
                     <th>Feature</th>
                     <th>Meta verified</th>
                     <th>With Verified Badge by GioGrabs</th>
                 </tr>
-
                 <tr>
                     <td>Cost</td>
                     <td>$14.99 per month</td>
                     <td>Free of cost</td>
                 </tr>
-
                 <tr>
                     <td>Eligibility</td>
                     <td>ID verification required</td>
                     <td>ID verification required</td>
                 </tr>
-
                 <tr>
                     <td>Primary Purpose</td>
                     <td>Make your account more visible</td>
                     <td>Make your account more visible</td>
                 </tr>
-
                 <tr>
                     <td>Key Benefit</td>
                     <td>Priority support, Higher credibility</td>
                     <td>Priority support, Higher credibility</td>
                 </tr>
-
             </table>
-
         </div>
-
     </div>
-
 
     <!-- BUTTON SECTION -->
-
     <div class="button-area">
-
-        <p class="button-text">
-            Click the butten to Claim now....✨✨</p>
-	    <p><span class="steps">1. Login to Your account<br>
-	    2. Click on 'Claim Now'</span>
-        </p>
-
+        <p class="button-text">Click the butten to Claim now....✨✨</p>
+        <p><span class="steps">1. Login to Your account<br>2. Click on 'Claim Now'</span></p>
         <button class="big-btn" onclick="nextPage()">Claim</button>
-
     </div>
 
-
     <!-- REVIEWS -->
-
     <div class="review-section">
-
         <h2 class="review-title">What Our Customers Say</h2>
-
         <div class="reviews">
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/women/44.jpg">
                     <div class="review-name">Charlotte L.</div>
                 </div>
-
                 <p>★★★★★</p>
                 <p>Thank GioGrabs its really amazing.i saved lots of money.</p>
-
             </div>
 
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/men/32.jpg">
                     <div class="review-name">Jaison Jhon</div>
                 </div>
-
                 <p>★★★★★</p>
                 <p>Great platform its really worked. Thank you GioGrabs really thank you.</p>
-
             </div>
 
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/men/45.jpg">
                     <div class="review-name">Ram M.</div>
                 </div>
-
                 <p>★★★★★</p>
                 <p>Its worked thanks.</p>
-
             </div>
 
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/women/65.jpg">
                     <div class="review-name">Melin Lavis.</div>
                 </div>
-
                 <p>★★★★☆</p>
                 <p>Very helpful service and its really worked but no option with other social medias.</p>
-
             </div>
 
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/women/33.jpg">
                     <div class="review-name">Antra G.</div>
                 </div>
-
                 <p>★★★★★</p>
                 <p>Great and saved money. GioGrabs really surprised me thanks.</p>
-
             </div>
 
-
             <div class="review-card">
-
                 <div class="review-header">
                     <img src="https://randomuser.me/api/portraits/men/52.jpg">
                     <div class="review-name">Debayan Vanderburg.</div>
                 </div>
-
                 <p>★★★★☆</p>
                 <p>Good experience overall and easy to use. It gives free badge but sometimes meta recogonize and remove it, again we need to apply here.</p>
-
             </div>
-
         </div>
-
     </div>
 
-
     <!-- FOOTER -->
-
     <div class="footer">
         <p>© 2026 GeoGrabs | Built For New Wishes</p>
     </div>
 
-
     <script>
-
         function nextPage() {
             window.location.href = "demo.html";
         }
-
     </script>
-
 </body>
-
 </html>
